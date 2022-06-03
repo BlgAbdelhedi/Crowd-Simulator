@@ -1,0 +1,32 @@
+{
+  "name": "crowd-simulator",
+  "version": "1.0.0",
+  "description": "crowd simulator",
+  "main": "index.jsx",
+  "scripts": {
+    "prebuild": "run-s clean lint",
+    "build": "parcel build public/index.html --no-source-maps",
+    "clean": "rimraf ./dist",
+    "lint": "",
+    "lint:code": "eslint --ext js src",
+    "start": "parcel public/index.html --open",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.50.0"
+  },
+  "dependencies": {
+        "gh-pages": "^4.0.0"
+  }
+}
